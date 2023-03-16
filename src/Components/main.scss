@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,300;0,500;0,700;1,200;1,300;1,500;1,600&family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+@import "../assets/scss/navigation";
+@import "../assets/scss/hero";
+@import "../assets/scss/about";
+@import "../assets/scss/contact";
+@import "../assets/scss/testimonials";
+@import "../assets/scss/works";
+
+
+.app{
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    .sections{
+        width: 100%;
+        height: calc(100vh - 80px);
+        position: relative;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        > *{
+            width: 100vw;
+            height: calc(100vh - 80px);
+            scroll-snap-align: start;
+        }
+    }
+}
+
