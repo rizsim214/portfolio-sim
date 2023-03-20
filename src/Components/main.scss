@@ -7,12 +7,13 @@
 @import "../assets/scss/testimonials";
 @import "../assets/scss/works";
 
-
-.app{
-    height: 100vh;
+body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+.app{
+    height: 100vh;
     &::-webkit-scrollbar {
         display: none;
     }

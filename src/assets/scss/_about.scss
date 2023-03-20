@@ -1,0 +1,76 @@
+
+.container {
+    background-color: #F7B21D ;
+    padding: 20px;
+    margin: 0;
+}
+.about-container{
+    height: 125vh;
+    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'poppins', sans-serif, cursive;
+    margin: auto;
+        .card-wrapper {
+            background-color: white;
+            border-radius: 8px;
+            padding: 30px 10px ;
+            width: 25rem;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s ease-in-out;
+            .card-img {
+                height: 100px;
+                width: auto;
+            }
+            .card-title {
+                font-size:32px;
+                padding-top: 10px;
+                text-align: center;
+                text-transform: capitalize;
+                margin: 0;
+                
+            }
+            .card-desc{
+                padding: 5px;
+                overflow: hidden;
+                width: 330px;
+                height: 150px;
+                
+
+                .card-text {
+                    margin: 0;
+                    text-align: justify;
+                    letter-spacing: 0.1rem;
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    &:hover {
+                        display: block;
+                    }
+                }
+            }
+            
+            &:hover {
+                
+                box-shadow: -1px 10px 29px -2px rgba(0,0,0,0.51);
+                -webkit-box-shadow: -1px 10px 29px -2px rgba(0,0,0,0.51);
+                -moz-box-shadow: -1px 10px 29px -2px rgba(0,0,0,0.51);
+            }
+        }
+}
+
+.headline {
+    font-family: 'poppins', sans-serif, cursive;
+    text-align: center;
+    font-weight: 600;
+    font-size: 42px;
+    letter-spacing: 0.3rem;
+    margin-bottom: 2rem;
+}
