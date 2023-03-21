@@ -16,7 +16,7 @@ const skills = [
 const About = () => {
   return (
     <div className="container">
-      <h1 className='headline'>SKILLS</h1>
+      <h1 className='headline'>skills - experience</h1>
       <div className="about-container">
         {skills.map((skill) => {
           return(

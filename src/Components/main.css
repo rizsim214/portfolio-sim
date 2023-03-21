@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,300;0,500;0,700;1,200;1,300;1,500;1,600&family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
 .nav-wrapper {
-  padding: 10px 50px;
+  padding: 0 20px;
   height: 80px;
   width: 100%;
-  max-width: 1800px;
+  max-width: 1400px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -26,7 +26,7 @@
   align-items: center;
   list-style-type: none;
   font-family: "Poppins", sans-serif;
-  font-size: 14px;
+  font-size: 15px;
 }
 .nav-list .nav-item {
   margin: 0 10px;
@@ -34,6 +34,10 @@
 .nav-list .nav-item a {
   font-weight: 600;
   color: #2D3047;
+  letter-spacing: 0.1rem;
+}
+.nav-list .nav-item a:hover {
+  color: #F7B21D;
 }
 
 .hero__section {
@@ -95,11 +99,10 @@
 }
 
 .about-container {
-  height: 125vh;
   gap: 1rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   font-family: "poppins", sans-serif, cursive;
   margin: auto;
@@ -109,12 +112,13 @@
   border-radius: 8px;
   padding: 30px 10px;
   width: 25rem;
+  height: 375px;
   cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .about-container .card-wrapper .card-img {
   height: 100px;
@@ -131,7 +135,7 @@
   padding: 5px;
   overflow: hidden;
   width: 330px;
-  height: 150px;
+  height: auto;
 }
 .about-container .card-wrapper .card-desc .card-text {
   margin: 0;
@@ -158,19 +162,22 @@
   font-size: 42px;
   letter-spacing: 0.3rem;
   margin-bottom: 2rem;
+  text-transform: uppercase;
 }
 
 body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .app {
   height: 100vh;
-}
-.app::-webkit-scrollbar {
-  display: none;
 }
 .app .sections {
   width: 100%;

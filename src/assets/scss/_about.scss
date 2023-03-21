@@ -5,11 +5,10 @@
     margin: 0;
 }
 .about-container{
-    height: 125vh;
     gap: 1rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     font-family: 'poppins', sans-serif, cursive;
     margin: auto;
@@ -18,12 +17,13 @@
             border-radius: 8px;
             padding: 30px 10px ;
             width: 25rem;
+            height: 375px;
             cursor: pointer;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            transition: all 0.3s ease-in-out;
+            transition: all 0.2s ease-in-out;
             .card-img {
                 height: 100px;
                 width: auto;
@@ -40,7 +40,7 @@
                 padding: 5px;
                 overflow: hidden;
                 width: 330px;
-                height: 150px;
+                height: auto;
                 
 
                 .card-text {
@@ -73,4 +73,5 @@
     font-size: 42px;
     letter-spacing: 0.3rem;
     margin-bottom: 2rem;
+    text-transform: uppercase;
 }

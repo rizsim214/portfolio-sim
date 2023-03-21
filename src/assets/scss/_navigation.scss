@@ -1,9 +1,9 @@
 
 .nav-wrapper {
-    padding: 10px 50px;
+    padding: 0 20px;
     height: 80px;
     width: 100%;
-    max-width: 1800px;
+    max-width: 1400px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -26,13 +26,18 @@
     align-items: center;
     list-style-type: none;
     font-family: 'Poppins', sans-serif;
-    font-size: 14px;
+    font-size: 15px;
     .nav-item {
         margin: 0 10px;
         a {
             font-weight: 600;
             color: #2D3047;
+            letter-spacing: 0.1rem;
+            &:hover {
+                color: #F7B21D;
+            }
         }
+        
     }
 
 }
